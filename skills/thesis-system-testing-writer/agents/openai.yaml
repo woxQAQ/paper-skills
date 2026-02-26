@@ -1,0 +1,4 @@
+interface:
+  display_name: "Thesis System Testing Writer"
+  short_description: "Draft and optimize thesis testing chapters"
+  default_prompt: "Draft or improve thesis system testing sections, including test overview, requirement analysis, test case design, execution records, metrics, and conclusions."

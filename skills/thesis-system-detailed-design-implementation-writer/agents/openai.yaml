@@ -1,0 +1,4 @@
+interface:
+  display_name: "Thesis Detailed Design Writer"
+  short_description: "Draft detailed design and implementation chapters"
+  default_prompt: "Draft or optimize thesis system detailed design and implementation sections with UML mapping, database design depth, and algorithm-focused implementation narration."
