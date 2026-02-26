@@ -1,0 +1,22 @@
+{
+  "name": "paper-skills-marketplace",
+  "owner": {
+    "name": "woxQAQ"
+  },
+  "metadata": {
+    "description": "A marketplace for academic paper writing skills in Chinese",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "paper-skills",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/woxQAQ/paper-skills.git"
+      },
+      "description": "Reusable writing skills for Chinese technical papers and graduation projects",
+      "version": "1.0.0",
+      "strict": true
+    }
+  ]
+}

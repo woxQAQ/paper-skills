@@ -1,0 +1,18 @@
+{
+  "name": "paper-skills",
+  "description": "A collection of reusable writing skills for Chinese technical papers and graduation projects. Includes skills for introduction, requirements analysis, system design, implementation, and testing chapters.",
+  "version": "1.0.0",
+  "author": {
+    "name": "woxQAQ"
+  },
+  "repository": "https://github.com/woxQAQ/paper-skills",
+  "license": "MIT",
+  "keywords": [
+    "thesis",
+    "paper",
+    "writing",
+    "academic",
+    "chinese",
+    "graduation-project"
+  ]
+}
