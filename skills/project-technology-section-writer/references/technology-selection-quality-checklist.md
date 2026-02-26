@@ -1,26 +1,26 @@
-# Technology Selection Quality Checklist
+# 技术选型质量检查清单
 
-Mark pass/fail before final output.
+在输出最终文本前逐项判定是否通过。
 
-## Focus Check
+## 聚焦检查
 
-- [ ] No copied generic framework introduction
-- [ ] Section focus is selection rationale, not encyclopedia-style description
-- [ ] Every major paragraph is tied to this project context
+- [ ] 未复制通用框架介绍或百科式背景
+- [ ] 章节重心是选型依据，而非技术词条堆砌
+- [ ] 每个主要段落都与本项目场景直接相关
 
-## Argument Quality
+## 论证质量
 
-- [ ] Clear chain: requirement -> criterion -> comparison -> final selection
-- [ ] At least one realistic alternative is discussed (if information allows)
-- [ ] Selected technology solves explicit project pain points
-- [ ] Trade-offs and constraints are acknowledged, not hidden
+- [ ] 论证链完整：需求 -> 准则 -> 对比 -> 最终选择
+- [ ] 在信息允许时，至少讨论一个现实可行备选方案
+- [ ] 所选技术能够对应并解决明确项目痛点
+- [ ] 明确写出权衡与约束，不回避代价
 
-## Practicality
+## 工程落地性
 
-- [ ] Expected benefits are concrete (e.g., faster delivery, easier maintenance)
-- [ ] Application plan in the project is described (not abstract claims)
-- [ ] Language is concise, technical, and non-promotional
+- [ ] 预期收益具体可感知（如交付效率、维护成本、稳定性）
+- [ ] 说明项目中的实际应用方式，不停留在抽象口号
+- [ ] 语言简洁、技术化、不过度宣传
 
-## Output Rule
+## 输出规则
 
-If key items fail, revise first, then provide final text.
+若关键项未通过，先修订再交付终稿。

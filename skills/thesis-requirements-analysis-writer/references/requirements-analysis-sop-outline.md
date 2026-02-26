@@ -1,83 +1,76 @@
-# Requirements Analysis SOP Outline (Chapter 3)
+# 系统需求分析 SOP 大纲（第3章）
 
-Use this structure to draft section 3.1-3.4.
+按以下结构撰写 3.1-3.4。
 
-## 3.1 System Overview
+## 3.1 系统概述
 
-Goal:
-- Explain what users need from the new system.
-- Explain why these needs drive system implementation.
-- Explain what value users gain after system delivery.
+目标：
+- 回答“用户需要什么”。
+- 回答“什么需求导致系统实施与开发”。
+- 回答“系统交付后用户得到什么”。
 
-Required content:
-- Business background, core user roles, and usage scenario.
-- Problem statement and implementation motivation.
-- High-level requirement artifacts reference (use-case diagram, activity diagram, sequence diagram, business process diagram).
+必写内容：
+- 业务背景、核心角色、使用场景。
+- 当前痛点与建设动因。
+- 系统定位与用户价值。
+- 对需求分析文档的总体引入（用例图、活动图、时序图、业务流程图等）。
 
-Suggested paragraph flow:
-1. Scenario and stakeholders.
-2. Existing pain points and requirement triggers.
-3. System positioning and expected user value.
-4. Transition to requirement elicitation.
+建议段落顺序：
+1. 场景与角色。
+2. 问题与动因。
+3. 目标与价值。
+4. 过渡到需求导出。
 
-## 3.2 Requirements Elicitation
+## 3.2 需求导出
 
-Goal:
-- Present how initial requirements are derived.
-- Show stakeholder list and elicitation method.
-- Clarify user problems and target outcomes.
+目标：
+- 说明需求如何被导出，而不是直接给结论。
+- 交代利益相关者与访谈过程。
+- 给出系统初步说明，作为后续建模基础。
 
-Required content:
-- Initial user needs summary.
-- Stakeholder list (primary users, operators, managers, maintainers, external systems).
-- Elicitation method and engineering approach (interview, observation, workshop, document analysis, prototype feedback).
-- Initial system definition (narrative + table/figure).
-- Current business flow and overall requirement constraints.
+必写内容：
+- 用户问题与目标的初步归纳。
+- 利益相关者列表（用户、管理员、运维、管理者、外部系统等）。
+- 导出方法与工程化手段（访谈、观察、研讨、文档分析、原型反馈等）。
+- 访谈/调研结果如何转化为初步需求。
+- 系统初步说明：业务模型、现状流程、总体要求（可配流程图）。
 
-Suggested output format:
-- Stakeholder table: role, concern, requirement focus.
-- Elicitation record summary: method, object, key findings.
-- Initial requirement list grouped by business domain.
+建议输出：
+- 利益相关者表：角色、关注点、需求焦点。
+- 需求导出记录：对象、方法、关键结论。
+- 初步需求分组清单（按业务域）。
 
-## 3.3 Analysis Model (Functional Requirements)
+## 3.3 分析模型（功能性需求）
 
-Goal:
-- Convert elicited requirements into analyzable functional models.
-- Describe information domain, behavior domain, and interaction domain.
+目标：
+- 把已导出需求转化为可分析、可沟通的功能模型与行为模型。
+- 支撑软件工程师与利益相关者对系统功能/行为形成一致理解。
 
-Required content:
-- Use-case diagram with actor and system boundary.
-- Use-case list and priority.
-- Use-case description tables for key use cases.
-- Dynamic modeling with suitable UML artifacts:
-  - Activity diagram for business flow
-  - Sequence diagram for interaction timing
-  - State diagram for lifecycle-sensitive objects (if needed)
+步骤要求：
+1. 先进行用例分析并给出需求条目表（模板见 `use-case-description-table-template.md`）。
+2. 基于需求条目形成系统用例图（包含参与者与系统边界）。
+3. 选择核心用例或突破性业务用例做重点描述，不罗列全部用例。
+4. 对关键动态场景补充活动图、时序图、状态图（按需）。
 
-Minimum recommended coverage:
-- At least one overall use-case diagram.
-- At least three key use-case description tables.
-- At least one dynamic diagram that matches a key scenario.
+写作要求：
+- 重点体现“设计思想与建模过程”，避免把正文写成项目清单。
+- 全量用例及细节可放附录，不应全部堆在本节正文。
+- 禁止“如下表/如下图”，使用“见表3-x”“见图3-x”。
 
-## 3.4 Non-Functional Requirements
+## 3.4 系统非功能性需求
 
-Goal:
-- Define quality attributes and constraints of a satisfactory system.
-- Express requirements with measurable indicators.
+目标：
+- 描述满意系统的质量属性与约束条件。
+- 采用规范分类并尽可能量化。
 
-Required content:
-- Reliability (e.g., fault rate, availability, recoverability).
-- Maintainability (e.g., mean repair time, modularity, diagnosability).
-- Performance (e.g., response time, throughput, concurrent users).
-- Security/compliance (if applicable).
-- Deployment and development environment constraints.
+必写维度（按项目裁剪）：
+- 可靠性（故障率、可恢复性、可维护性）。
+- 性能（响应时间、吞吐量、并发量）。
+- 安全性（权限、审计、数据保护）。
+- 可用性/易用性（学习成本、可操作性）。
+- 兼容性与环境约束（软硬件、部署、开发环境）。
 
-Suggested presentation:
-- Use a measurable requirement table:
-  - attribute
-  - indicator definition
-  - target value
-  - verification method
-
-Check:
-- Avoid vague expressions such as "high performance" or "good stability" without metrics.
+表达要求：
+- 每项指标给出“定义 + 目标值 + 验证方式”。
+- 避免“高性能、稳定性好”等不可验证表述。
+- 命名遵循软件工程常见质量属性，不随意自创分类名。

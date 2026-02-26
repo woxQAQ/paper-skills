@@ -1,21 +1,21 @@
-# Cross-Chapter Artifact Mapping Rules
+# 跨章节制品映射规则
 
-Use one representation per chapter for the same business operation.
+同一业务操作在不同章节应使用不同表达视角。
 
-## Mapping Rule
+## 映射规则
 
-- Requirements analysis: describe with use cases and requirement constraints.
-- Detailed design: describe with sequence/activity/state/class artifacts.
-- Implementation: describe with algorithm steps, flowcharts, or pseudocode.
+- 需求分析章：用需求约束与用例表达。
+- 详细设计章：用类图/时序图/活动图/状态图等设计制品表达。
+- 实现章节：用算法步骤、流程图、伪代码表达。
 
-## Anti-Duplication Rule
+## 去重规则
 
-- Do not repeat full requirement narrative in detailed design.
-- Do not copy sequence/activity text into implementation unchanged.
-- When content overlaps, keep one short bridge sentence and focus on chapter-specific details.
+- 详细设计中不重复完整需求叙述。
+- 实现部分不原样复制时序/活动图文字说明。
+- 内容有重叠时，仅保留一条过渡句，重点落在本章应有抽象层级。
 
-## Quick Check Questions
+## 快速自检问题
 
-- Is this paragraph still requirement language rather than design language?
-- Is this section interpreting diagrams, or only narrating business background again?
-- Is implementation text explaining algorithm decisions instead of showing raw code?
+- 这一段还是“需求语言”而不是“设计语言”吗？
+- 这一节是在解读图，而不是再次讲业务背景吗？
+- 实现文本是在解释算法决策，而不是贴原始代码吗？

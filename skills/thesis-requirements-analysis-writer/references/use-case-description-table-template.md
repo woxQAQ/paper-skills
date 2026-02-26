@@ -1,25 +1,32 @@
-# Use-Case Description Table Template
+# 功能性需求与用例描述模板
 
-Use this template for each key use case in section 3.3.
+用于 3.3 分析模型（功能性需求）。
 
-| Item | Content |
+## 1) 需求条目表（先做）
+
+| 需求编号 | 名称 | 参与者 | 说明 |
+| --- | --- | --- | --- |
+| FR-01 |  |  |  |
+| FR-02 |  |  |  |
+
+使用说明：
+- 先列需求条目，再据此绘制用例图。
+- 名称建议使用“动词+对象”结构。
+- 说明写业务目标，不写实现细节。
+
+## 2) 用例描述表（选核心用例）
+
+| 字段 | 内容 |
 | --- | --- |
-| Use Case Name |  |
-| Use Case Description |  |
-| Primary Actor |  |
-| Priority |  |
-| Trigger |  |
-| Postcondition |  |
-| Basic Flow |  |
-| Exception Flow |  |
+| 用例名称 |  |
+| 用例描述 |  |
+| 主执行者 |  |
+| 优先级 |  |
+| 触发条件 |  |
+| 后置条件 |  |
+| 基本事件流 |  |
+| 异常事件流 |  |
 
-## Writing Guidance
-
-- Use Case Name: use verb-object style (for example: "Submit Work Order").
-- Use Case Description: describe business goal and scope in 1-2 sentences.
-- Primary Actor: identify the role that initiates the use case.
-- Priority: mark as high/medium/low and keep consistent with requirement priority rules.
-- Trigger: describe specific event or condition that starts the use case.
-- Postcondition: describe observable system state after completion.
-- Basic Flow: write the main successful path in numbered steps.
-- Exception Flow: list alternative/error branches with handling logic.
+使用说明：
+- 仅展开核心或突破性业务用例，避免全量罗列。
+- 基本事件流按步骤编号，异常事件流写清分支与处理策略。

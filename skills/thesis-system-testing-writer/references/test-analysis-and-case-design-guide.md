@@ -1,42 +1,42 @@
-# Test Analysis and Case Design Guide
+# 测试分析与用例设计指南
 
-Use this guide to strengthen section 6.2 and 6.3 quality.
+用于提升 6.2 与 6.3 的写作质量。
 
-## Explicit Requirement Mining
+## 显式需求挖掘
 
-- Build a source-to-test-point trace table: source document -> requirement item -> test point.
-- Prioritize test points tied to high risk, high frequency, or critical business paths.
-- Separate functional and non-functional requirements (performance, reliability, usability, security, compatibility).
+- 建立“来源 -> 需求项 -> 测试点”追踪表。
+- 优先覆盖高风险、高频率、关键业务路径对应测试点。
+- 区分功能性与非功能性需求（性能、可靠性、可用性、安全性、兼容性）。
 
-## Implicit Requirement Mining
+## 隐式需求挖掘
 
-- Infer hidden constraints from domain habits and user expectations.
-- Ask targeted questions to stakeholders for ambiguous behaviors.
-- Execute exploratory runs to discover undocumented edge cases.
-- Convert inferred needs into verifiable test points with clear pass/fail criteria.
+- 从领域习惯与用户预期中推断隐藏约束。
+- 针对含糊行为向利益相关者提出定向问题。
+- 通过探索性测试发现文档未覆盖边界场景。
+- 将推断需求转化为可验证测试点，并明确通过/失败判据。
 
-## Multi-Level Requirement Selection
+## 多层级需求选择
 
-- Do not force all levels to be detailed in main text; choose representative levels based on scope and risk.
-- Keep the selection rationale explicit (for example: system + regression are detailed because release risk is highest).
-- Summarize omitted similar tests as "same pattern" with one bridge explanation.
+- 正文不强制详写全部层级，按范围与风险选代表层级展开。
+- 明确选择理由（例如：系统测试+回归测试详写，因为发布风险最高）。
+- 对省略的同类测试用“同模式”桥接语归纳。
 
-## Case Design Method Selection
+## 用例设计方法选择
 
-Common methods to combine for key tests:
-- equivalence partitioning
-- boundary value analysis
-- decision table
-- cause-effect graph
-- state transition testing
-- scenario/use-case based testing
-- error guessing
+关键测试可组合使用：
+- 等价类划分
+- 边界值分析
+- 判定表
+- 因果图
+- 状态迁移测试
+- 场景/用例驱动测试
+- 错误推测法
 
-Use at least two methods for priority test modules and explain method-to-problem fit.
+优先级高的测试模块至少采用两种方法，并说明“方法为何匹配该问题”。
 
-## Output Form Suggestions
+## 输出形式建议
 
-- Requirement-to-test-point trace table
-- Representative test case table with method labels
-- Execution result summary table
-- Defect distribution and residual issue summary
+- 需求到测试点追踪表
+- 带方法标注的代表性测试用例表
+- 执行结果汇总表
+- 缺陷分布与残留问题汇总

@@ -1,45 +1,48 @@
 ---
 name: thesis-requirements-analysis-writer
-description: Write and optimize the system requirements analysis chapter in Chinese technical papers and graduation projects. Use when the user needs to draft, rewrite, expand, or polish sections 3.1-3.4 (system overview, requirements elicitation, functional analysis model, non-functional requirements), including UML-oriented requirement artifacts and use-case description tables.
+description: 重写或优化中文技术论文/毕业设计中的“系统需求分析”章节。用于用户需要撰写、改写、扩写或润色3.1-3.4（系统概述、需求导出、分析模型/功能性需求、非功能性需求）时，尤其适用于需要体现需求分析文档（用例图、活动图、时序图、业务流程图）并按规范给出需求表与用例描述表的场景。
 ---
 
-# Thesis Requirements Analysis Writer
+# 论文需求分析写作器
 
-Follow this workflow to produce or optimize chapter 3 requirements analysis content.
+按以下流程输出或重写第3章“系统需求分析”内容。
 
-## Workflow
+## 工作流
 
-1. Confirm the system scope, stakeholders, and chapter target.
-2. Collect requirement sources, interview findings, and business process context.
-3. Draft sections 3.1-3.4 in order using `references/requirements-analysis-sop-outline.md`.
-4. Build functional artifacts (use-case list, use-case description table, dynamic behavior models).
-5. Run quality checks with `references/requirements-analysis-quality-checklist.md` and revise weak parts.
+1. 明确系统边界、目标用户、章节写作目标。
+2. 收集需求来源、利益相关者访谈结论、业务现状流程。
+3. 按 `references/requirements-analysis-sop-outline.md` 完成3.1-3.4。
+4. 先做需求条目表，再抽象用例图，并补充关键用例描述表与动态模型。
+5. 使用 `references/requirements-analysis-quality-checklist.md` 自检并修订。
 
-## Input Collection
+## 输入收集
 
-Collect at least:
-- project/system name, target users, and business scenario
-- user pain points, implementation motivation, and expected gains
-- stakeholder list and elicitation evidence (interview/workshop/document analysis)
-- core business process and current workflow bottlenecks
-- candidate use cases and priorities
-- measurable non-functional constraints (reliability, maintainability, performance, recoverability, deployment)
+至少收集：
+- 系统名称、目标用户、业务场景
+- 用户痛点、建设动因、预期收益
+- 利益相关者清单与访谈/调研证据
+- 现有业务流程与瓶颈
+- 候选需求条目、核心用例与优先级
+- 可量化非功能指标（可靠性、可维护性、性能、可恢复性、安全性、环境约束）
 
-If input is incomplete, state assumptions explicitly before drafting.
+若输入不完整，先声明假设再写作。
 
-## Writing Rules
+## 章节与写作规则
 
-- Keep a clear chain: business problem -> requirement source -> model expression -> requirement conclusion.
-- Ensure section 3.1 reflects requirement-analysis artifacts, not only narrative text.
-- In section 3.2, explain elicitation method and stakeholder mapping, not only final conclusions.
-- In section 3.3, provide use-case diagram support and at least one use-case description table using `references/use-case-description-table-template.md`.
-- For dynamic behavior, choose suitable UML views (activity/sequence/state) tied to concrete scenarios.
-- In section 3.4, express non-functional requirements with quantifiable indicators.
+必须满足：
+- 建立清晰链路：业务问题 -> 需求导出 -> 分析模型 -> 需求结论。
+- 3.1“系统概述”回答三件事：用户需要什么、为何要开发、上线后用户得到什么。
+- 3.2“需求导出”说明利益相关者与访谈过程，强调这是后续模型基础；给出系统初步说明（叙述+图表），覆盖业务模型与现状流程。
+- 3.3“分析模型（功能性需求）”先给需求条目表（`|需求编号|名称|参与者|说明|`），再形成用例图，并仅展开核心/突破性用例，避免清单式堆砌。
+- 3.3 对关键场景补充动态建模（活动图、时序图、状态图按需选择），且与具体业务场景绑定。
+- 3.4“系统非功能性需求”使用软件工程通行分类，指标尽量定量并可验证，不得自定义随意名称。
+- 行文中避免“如下表/如下图”，改为“见表3-x”“见图3-x”。
 
-## Optimization Mode
+用例描述表使用 `references/use-case-description-table-template.md`。
 
-When revising existing chapter text:
+## 重写模式
 
-1. Diagnose by subsection: missing requirement source, weak model mapping, unquantified constraints, or logical gaps.
-2. Preserve valid facts and rewrite only weak or generic paragraphs.
-3. Return revised text plus a short gap list of missing evidence/artifacts.
+当用户给出已有文本时：
+1. 分小节诊断：需求来源缺失、模型映射薄弱、非功能未量化、逻辑跳步。
+2. 保留有效事实，重点重写空泛段落和清单式堆砌段落。
+3. 输出“重写后正文 + 缺失材料清单（访谈证据/图表/指标）”。

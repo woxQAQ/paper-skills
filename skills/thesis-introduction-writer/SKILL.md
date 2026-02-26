@@ -1,56 +1,56 @@
 ---
 name: thesis-introduction-writer
-description: Write and optimize the Introduction chapter of Chinese technical papers and graduation projects. Use when the user needs to draft, rewrite, expand, or polish sections 1.1-1.5 (background/significance, domestic and international status, main problems solved, main work, chapter organization), strengthen technical positioning, and make the work uniqueness and references concrete.
+description: 撰写与优化中文技术论文/毕业设计的“绪论”章节。用于用户需要起草、重写、扩写或润色 1.1-1.5（背景与意义、国内外现状、拟解决问题、主要工作、论文结构）时，突出技术定位并使工作特色与证据表达更具体。
 ---
 
-# Thesis Introduction Writer
+# 论文绪论写作器
 
-Follow this workflow to produce or optimize an introduction chapter.
+按以下流程生成或重写绪论章节。
 
-## Workflow
+## 工作流
 
-1. Confirm paper type and context.
-2. Collect core inputs (topic, scenario, technical route, related work, solved gaps).
-3. Draft section 1.1-1.5 in order using the fixed structure in `references/introduction-sop-outline.md`.
-4. Run quality checks with `references/introduction-quality-checklist.md` and revise weak parts.
-5. Return the final polished version plus a short list of missing evidence (if any).
+1. 明确论文类型与写作语境。
+2. 收集核心输入（题目、场景、技术路线、相关工作、待解决缺口）。
+3. 按 `references/introduction-sop-outline.md` 依次完成 1.1-1.5。
+4. 使用 `references/introduction-quality-checklist.md` 质检并修订薄弱段落。
+5. 输出润色后的正文，并附缺失证据清单（若有）。
 
-## Input Collection
+## 输入收集
 
-Collect at least:
-- project/topic name and application scenario
-- development motivation, pain points, and expected value
-- comparable domestic/foreign systems, methods, or products
-- limitations of prior work and the target gap
-- this project/paper concrete work items
-- expected chapter arrangement (or infer a reasonable structure)
+至少收集：
+- 项目/课题名称与应用场景
+- 开发动机、痛点与预期价值
+- 可对比的国内外系统、方法或产品
+- 既有方案局限与目标改进点
+- 本项目/论文的具体工作项
+- 章节安排预期（或据常规结构合理推断）
 
-If inputs are missing, state assumptions clearly before drafting.
+若输入缺失，先明确假设再写作。
 
-## Required Output Structure (1.1-1.5)
+## 固定输出结构（1.1-1.5）
 
-Use these exact section goals:
+各小节目标如下：
 
-- 1.1 System development background and significance: Explain real context, urgency, and practical/technical value.
-- 1.2 Domestic and international status of similar topics (or technology): Compare technical routes and summarize strengths/limitations.
-- 1.3 Main problems solved: State specific problems, constraints, and challenge points.
-- 1.4 Main work of this paper: Describe implemented work items; for non-research papers, avoid "main contribution" wording.
-- 1.5 Organization of this paper: Briefly map each chapter's role.
+- 1.1 系统开发背景与意义：说明现实背景、紧迫性、实践与技术价值。
+- 1.2 国内外研究（或应用）现状：对比技术路线，归纳优缺点与差距。
+- 1.3 论文（项目）拟解决的主要问题：明确问题、约束与挑战点。
+- 1.4 本文（本系统）主要工作：描述已完成的具体工作项；非研究型文本避免“主要贡献”表述。
+- 1.5 论文组织结构：简述各章节作用与衔接。
 
-## Writing Requirements
+## 写作要求
 
-- Keep the logic chain explicit: "why this work" -> "what is lacking" -> "what we do".
-- Base section 1.2 on technical analysis, not only narrative description.
-- Make "features/innovation/challenges" concrete and verifiable; avoid vague claims.
-- Concentrate citation placeholders mainly in sections 1.1 and 1.2 when evidence is required.
-- Prefer concise academic Chinese and avoid exaggerated language.
+- 保持逻辑链清晰：“为什么做” -> “现有不足” -> “我们做什么”。
+- 1.2 以技术分析为主，不写成纯背景罗列。
+- 将“特色/创新/难点”写成可验证事实，避免空泛表达。
+- 需要证据时，引用占位优先放在 1.1 与 1.2。
+- 语言保持学术、简洁、克制。
 
-## Optimization Mode
+## 重写模式
 
-When rewriting an existing introduction:
+当重写已有绪论时：
 
-1. Diagnose by section: missing logic, weak technical comparison, unsupported claims, repetition, or chapter mismatch.
-2. Keep valid factual content; rewrite only weak paragraphs.
-3. Produce:
-   - revised full text, or
-   - "before -> after" key paragraph upgrades if the user asks for incremental edits.
+1. 分节诊断：逻辑缺失、技术对比薄弱、论断无证据、重复表达、章节错配。
+2. 保留有效事实，仅重写薄弱段落。
+3. 按用户要求输出：
+   - 完整重写稿，或
+   - 关键段“前后对照”优化稿。

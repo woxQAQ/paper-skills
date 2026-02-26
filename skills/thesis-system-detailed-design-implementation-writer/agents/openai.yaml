@@ -1,4 +1,4 @@
 interface:
-  display_name: "Thesis Detailed Design Writer"
-  short_description: "Draft detailed design and implementation chapters"
-  default_prompt: "Draft or optimize thesis system detailed design and implementation sections with UML mapping, database design depth, and algorithm-focused implementation narration."
+  display_name: "论文详细设计与实现写作器"
+  short_description: "撰写和优化详细设计与实现章节"
+  default_prompt: "请撰写或优化论文的系统详细设计与实现章节，突出 UML 制品映射、数据库详细设计深度和以算法过程为主的实现叙述。"

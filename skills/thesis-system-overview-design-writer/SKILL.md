@@ -1,54 +1,54 @@
 ---
 name: thesis-system-overview-design-writer
-description: Write and optimize the system overview design chapter (typically chapter 4) for Chinese technical papers and graduation projects. Use when the user needs to draft, rewrite, expand, or polish section 4.1-4.4, including static architecture views (functional, logical/component, layered, deployment), optional dynamic views (process/data flow), data management design (ER/model mapping), and optional security/development views while emphasizing design rationale (Why) before implementation details (How).
+description: 撰写与优化中文技术论文/毕业设计中的“系统总体设计”章节（通常第4章）。用于用户需要起草、重写、扩写或润色 4.1-4.4 时，覆盖静态架构视图（功能、逻辑/组件、分层、部署）、按需动态视图（流程/数据流）、数据管理设计（ER/模型映射）及可选安全/开发视图，并强调“先讲设计依据，再讲实现路径”。
 ---
 
-# Thesis System Overview Design Writer
+# 论文系统总体设计写作器
 
-Follow this workflow to produce or optimize chapter 4 system overview design content.
+按以下流程生成或重写第4章系统总体设计内容。
 
-## Workflow
+## 工作流
 
-1. Confirm chapter target, system boundary, and scenario.
-2. Collect architectural constraints, design drivers, and key technical decisions.
-3. Draft section 4.1-4.4 with `references/system-overview-design-sop-outline.md`.
-4. Keep architecture discussion at macro level: component + connector + rationale.
-5. Run quality checks with `references/system-overview-design-quality-checklist.md` and revise weak parts.
+1. 明确章节目标、系统边界与业务场景。
+2. 收集架构约束、设计驱动与关键技术决策。
+3. 按 `references/system-overview-design-sop-outline.md` 完成 4.1-4.4。
+4. 保持宏观架构视角：组件 + 连接关系 + 设计依据。
+5. 用 `references/system-overview-design-quality-checklist.md` 质检并修订。
 
-## Input Collection
+## 输入收集
 
-Collect at least:
-- project/system name, core business scenario, and target users
-- design drivers: performance, reliability, scalability, security, maintainability, cost, delivery constraints
-- candidate architecture options and final selection reason (why this scheme)
-- main components/modules and key connectors (API, message bus, DB link, file flow)
-- deploy environment (node roles, network, middleware, runtime)
-- data model and persistence strategy (core entities, relationships, ORM/persistence mapping)
-- optional dynamic cases (critical business flow, concurrency/sync/communication concerns)
+至少收集：
+- 项目/系统名称、核心业务场景、目标用户
+- 设计驱动：性能、可靠性、扩展性、安全性、可维护性、成本、交付约束
+- 候选架构方案与最终选型理由
+- 主要组件/模块与关键连接（API、消息总线、数据库链路、文件流）
+- 部署环境（节点角色、网络、基础中间件、运行时）
+- 数据模型与持久化策略（核心实体、关系、ORM/映射）
+- 可选动态场景（关键流程、并发/同步/通信关注点）
 
-If input is incomplete, state assumptions explicitly before drafting.
+若输入不完整，先声明假设再写作。
 
-## Required Output Structure (4.1-4.4)
+## 推荐输出结构（4.1-4.4）
 
-- 4.1 System static structure (required): choose suitable views from functional, logical/component, layered, and deployment view; do not force all UML diagrams.
-- 4.2 System dynamic structure (optional): for key runtime behavior, use process view (sequence/activity) or data-flow view.
-- 4.3 System data management (generally required): describe ER model, key table relationships, persistence mapping, and storage strategy.
-- 4.4 Others (optional): include security view, development/implementation view, or system-specific highlights.
+- 4.1 系统静态结构（必写）：在功能、逻辑/组件、分层、部署视图中按需选择，不强制全套 UML。
+- 4.2 系统动态结构（选写）：针对关键运行行为，使用流程视图（时序/活动）或数据流视图。
+- 4.3 系统数据管理（通常必写）：描述 ER 模型、关键表关系、持久化映射与存储策略。
+- 4.4 其他视图（选写）：可包含安全视图、开发实现视图或系统特有设计重点。
 
-## Writing Rules
+## 写作规则
 
-- Start each major subsection with design basis and decision reason (Why), then describe realization path (How).
-- Prioritize architecture-level description over low-level implementation details.
-- For static structure, make component responsibilities and connectors explicit.
-- For dynamic structure, bind diagrams to concrete business scenarios and state transitions.
-- For data management, ensure consistency among business objects, logical model, and physical storage.
-- Distinguish self-developed work from reused open-source frameworks; clarify what is extended/customized.
-- Expand innovative or distinctive parts; keep generic/common parts concise.
+- 每个大节先写设计依据与决策理由（Why），再写实现路径（How）。
+- 优先架构层表达，避免下沉到实现细节。
+- 静态结构要明确组件职责与连接关系。
+- 动态结构要与具体业务场景和状态变化绑定。
+- 数据管理要保证业务对象、逻辑模型、物理存储一致。
+- 区分自研部分与复用开源框架，说明扩展与定制点。
+- 对创新/特色部分展开写，对通用内容简写。
 
-## Optimization Mode
+## 重写模式
 
-When revising existing chapter text:
+当重写已有章节时：
 
-1. Diagnose by subsection: missing rationale, weak view selection, shallow data design, diagram-text mismatch, or over-detailed implementation.
-2. Preserve valid facts and architecture choices; rewrite generic or unsupported claims.
-3. Return revised text plus a short gap list of missing evidence/diagrams.
+1. 分节诊断：依据缺失、视图选择不当、数据设计浅、图文不匹配、实现细节过多。
+2. 保留有效事实与架构选择，重写空泛或无支撑论断。
+3. 输出重写正文，并附缺失证据/图表清单。

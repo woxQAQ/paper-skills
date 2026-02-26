@@ -1,28 +1,28 @@
-# Introduction Quality Checklist
+# 绪论质量检查清单
 
-Mark each item as pass/fail before final output.
+在输出终稿前逐项判定是否通过。
 
-## Logic and Positioning
+## 逻辑与定位
 
-- [ ] Clear chain: background -> related work -> gap -> solved problems -> main work
-- [ ] Section 1.2 is technical comparison, not only narrative literature summary
-- [ ] Claimed features/challenges are concrete and tied to real limitations
+- [ ] 逻辑链完整：背景 -> 现状 -> 缺口 -> 待解决问题 -> 主要工作
+- [ ] 1.2 以技术比较为主，不是纯叙述式文献罗列
+- [ ] 所述特色/难点具体且与真实限制条件相关
 
-## Section Completeness
+## 小节完整性
 
-- [ ] 1.1 explains both practical significance and technical significance
-- [ ] 1.2 covers domestic and international status with synthesis
-- [ ] 1.3 states specific problems and challenge points
-- [ ] 1.4 lists concrete work items mapped to problems
-- [ ] 1.5 explains chapter organization clearly
+- [ ] 1.1 同时说明实践意义与技术意义
+- [ ] 1.2 覆盖国内外现状并给出综合归纳
+- [ ] 1.3 明确具体问题与挑战点
+- [ ] 1.4 给出与问题对应的具体工作项
+- [ ] 1.5 清晰说明章节组织
 
-## Language and Evidence
+## 语言与证据
 
-- [ ] Academic tone is concise, no exaggerated claims
-- [ ] Unsupported absolute statements are removed or softened
-- [ ] Citation placeholders are added where evidence is needed (especially 1.1, 1.2)
-- [ ] Repetition across sections is minimized
+- [ ] 语气学术、简洁，无夸大性表述
+- [ ] 删除或弱化无依据的绝对化判断
+- [ ] 需要证据处补充引用占位（重点 1.1、1.2）
+- [ ] 控制小节间重复内容
 
-## Output Rule
+## 输出规则
 
-If any critical item fails, revise before final delivery and report what was fixed.
+若关键项未通过，先修订并说明修复点，再交付终稿。

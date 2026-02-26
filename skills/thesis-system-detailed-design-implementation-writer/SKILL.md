@@ -1,45 +1,45 @@
 ---
 name: thesis-system-detailed-design-implementation-writer
-description: Write and optimize the system detailed design and implementation chapter for Chinese technical papers and graduation projects. Use when the user needs to draft, rewrite, expand, or polish content about module-level internal algorithms and data structures, UML detailed design artifacts (class/object/sequence/collaboration/state/activity), database detailed design (DB selection, table schema, table relationships, ORM/object-relational mapping, persistence and storage strategy), and algorithm-focused implementation narratives that avoid raw code dumping.
+description: 撰写与优化中文技术论文/毕业设计中的“系统详细设计与实现”章节。用于用户需要起草、重写、扩写或润色模块级算法与数据结构、UML 详细设计制品（类图/对象图/时序图/协作图/状态图/活动图）、数据库详细设计（选型、表结构、关系、ORM 映射、持久化策略）以及面向算法过程的实现描述时，避免正文堆砌原始代码。
 ---
 
-# Thesis System Detailed Design and Implementation Writer
+# 论文详细设计与实现写作器
 
-Follow this workflow to produce or optimize a detailed design and implementation chapter.
+按以下流程生成或重写“详细设计与实现”章节。
 
-## Workflow
+## 工作流
 
-1. Confirm chapter target, scope boundary, and key business flows.
-2. Identify modules with high complexity or clear technical distinctiveness; deprioritize routine modules.
-3. Draft detailed design with `references/detailed-design-implementation-sop-outline.md`.
-4. Ensure artifact mapping consistency with `references/artifact-mapping-rules.md`.
-5. Run quality checks with `references/detailed-design-implementation-quality-checklist.md` and revise weak parts.
+1. 明确章节目标、范围边界与关键业务流程。
+2. 识别高复杂度或技术辨识度高的模块，弱化常规模块篇幅。
+3. 按 `references/detailed-design-implementation-sop-outline.md` 组织详细设计。
+4. 用 `references/artifact-mapping-rules.md` 校验制品映射一致性。
+5. 用 `references/detailed-design-implementation-quality-checklist.md` 质检并修订。
 
-## Input Collection
+## 输入收集
 
-Collect at least:
-- system/project name, chapter position, and target readers
-- module decomposition and priorities (which modules are difficult, innovative, or high-risk)
-- UML evidence for detailed design: class/object relations, sequence/collaboration flows, state transitions, activity paths
-- database decisions: DB type selection reason, core tables, key fields, relationships, indexing/storage constraints
-- persistence decisions: ORM mapping strategy, transaction boundaries, caching/consistency policy
-- implementation focus: key algorithms, core execution steps, performance/stability handling points
+至少收集：
+- 系统/项目名称、章节定位、目标读者
+- 模块拆分与优先级（高难、创新、高风险模块）
+- UML 证据：类/对象关系、时序/协作流程、状态迁移、活动路径
+- 数据库决策：类型选型理由、核心表、关键字段、关系、索引与存储约束
+- 持久化决策：ORM 映射策略、事务边界、缓存与一致性策略
+- 实现重点：关键算法、核心执行步骤、性能/稳定性处理点
 
-If input is incomplete, state assumptions explicitly before drafting.
+若输入不完整，先声明假设再写作。
 
-## Writing Rules
+## 写作规则
 
-- Describe **problem -> method/pattern -> result -> benefit** in each key subsection.
-- Prioritize design rationale (why this design) over exhaustive artifact listing.
-- Focus on distinctive, difficult, or complex designs; move routine details to appendix if needed.
-- Keep one business flow represented differently by phase: requirements use-case, design sequence/activity, implementation algorithm/flow or pseudocode; avoid duplicated cross-chapter retelling.
-- In implementation text, explain algorithm steps and control logic; avoid code accumulation.
-- Do not place large code/config blocks in main text. If unavoidable, show concise pseudocode in a text box as an "Algorithm" and config snippets in a text box as a "Figure".
+- 每个重点小节采用“问题 -> 方法/模式 -> 结果 -> 收益”链路。
+- 优先解释设计依据（为什么这样设计），而非穷举制品。
+- 聚焦有辨识度、复杂度高、实现难的设计；常规内容必要时放附录。
+- 同一业务流程在不同章节用不同视角表达：需求阶段用例、设计阶段时序/活动、实现阶段算法/伪代码，避免跨章重复复述。
+- 实现部分重点写算法步骤与控制逻辑，避免代码堆砌。
+- 正文不放大段代码/配置；必须出现时，用简短伪代码或图框化片段表达。
 
-## Optimization Mode
+## 重写模式
 
-When revising existing text:
+当重写已有文本时：
 
-1. Diagnose by subsection: weak rationale, diagram-text mismatch, shallow DB design, repeated requirement-level narration, or code-heavy implementation writing.
-2. Preserve valid facts and architecture decisions; rewrite only weak sections.
-3. Return revised text plus a short gap list of missing diagrams/evidence/appendix items.
+1. 分节诊断：设计依据薄弱、图文不一致、数据库设计浅、重复需求层叙述、实现段落代码化严重。
+2. 保留有效事实与架构决策，仅重写薄弱部分。
+3. 输出重写正文，并附缺失图表/证据/附录材料清单。

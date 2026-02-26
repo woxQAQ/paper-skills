@@ -1,40 +1,40 @@
-# System Testing SOP Outline
+# 系统测试 SOP 大纲
 
-Use this scaffold for thesis chapter 6 system testing content.
+论文第6章系统测试可按以下模板组织。
 
-## 6.1 Test Overview
+## 6.1 测试概述
 
-- State test declarations, objects, scope, and tailoring strategy.
-- Describe test environment configuration, test methods, and tools.
-- Clarify test goals and acceptance baseline.
-- Provide a brief test conclusion preview.
+- 声明测试对象、范围与内容裁剪策略。
+- 说明测试环境配置、测试方法与工具。
+- 明确测试目标与验收基线。
+- 给出简短测试结论预览。
 
-## 6.2 Test Analysis
+## 6.2 测试分析
 
-- **Explicit test requirements**: extract test points from requirement/spec/design/user docs and direct project statements.
-- **Implicit test requirements**: infer hidden expectations from domain knowledge, tester experience, interviews, and hands-on system probing.
-- Classify test requirements by stage as needed:
-  - unit test requirements
-  - integration test requirements
-  - configuration item test requirements
-  - system test requirements
-  - acceptance test requirements
-  - regression test requirements
-- Due to chapter limits, select representative tests for deep analysis and summarize the rest.
+- **显式测试需求**：从需求/规格/设计/用户文档及项目直接要求中提取测试点。
+- **隐式测试需求**：基于领域知识、测试经验、访谈与系统探查推导隐藏预期。
+- 按阶段按需分类测试需求：
+  - 单元测试需求
+  - 集成测试需求
+  - 配置项测试需求
+  - 系统测试需求
+  - 验收测试需求
+  - 回归测试需求
+- 受篇幅约束时，深挖代表性测试，其余同类测试归纳说明。
 
-## 6.3 Test Case Design
+## 6.3 测试用例设计
 
-For each selected test requirement:
-- Test objective and prerequisite.
-- Chosen case design method and why it fits.
-- Inputs, steps, expected outputs, and pass/fail criteria.
+针对每个选定测试需求：
+- 测试目标与前置条件。
+- 选用的用例设计方法及适配理由。
+- 输入、步骤、预期输出、通过/失败判据。
 
-For key tests, use at least two distinct case design methods (for example equivalence partitioning + boundary value, or decision table + scenario/state transition).
+关键测试至少使用两种不同方法（如等价类+边界值，或判定表+场景/状态迁移）。
 
-## 6.4 Test Execution Records, Conclusions, and Analysis
+## 6.4 测试执行记录、结论与分析
 
-- Record resource consumption with actual data (time, manpower, environment usage).
-- Summarize execution data and perform metrics analysis.
-- Include process and capability evaluation for testing activities.
-- Include product quality evaluation: coverage sufficiency, defect statistics/trends, residual defects, unresolved issues.
-- Conclude whether test goals are met and whether release/pass criteria are satisfied.
+- 记录资源消耗实测数据（时间、人力、环境占用）。
+- 汇总执行数据并开展度量分析。
+- 给出测试过程能力与执行质量评价。
+- 给出产品质量评价：覆盖率充分性、缺陷统计/趋势、残留缺陷、未解决问题。
+- 判断测试目标是否达成、发布/通过准则是否满足。

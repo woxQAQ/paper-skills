@@ -1,45 +1,45 @@
 ---
 name: thesis-system-testing-writer
-description: Write and optimize the system testing chapter for Chinese technical papers and graduation projects. Use when the user needs to draft, rewrite, expand, or polish chapter 6 testing content, including software development process testing and software product testing, test overview, explicit/implicit test requirement analysis, multi-stage test requirement selection (unit/integration/configuration item/system/acceptance/regression), test case design methods, and execution records with coverage/defect/residual risk based conclusions.
+description: 撰写与优化中文技术论文/毕业设计中的“系统测试”章节。用于用户需要起草、重写、扩写或润色第6章测试内容时，覆盖开发过程测试与产品测试、测试概述、显式/隐式测试需求分析、多层级测试选择（单元/集成/配置项/系统/验收/回归）、测试用例设计方法，以及基于覆盖率/缺陷/残留风险的执行记录与结论。
 ---
 
-# Thesis System Testing Writer
+# 论文系统测试写作器
 
-Follow this workflow to produce or optimize a thesis system testing chapter.
+按以下流程生成或重写系统测试章节。
 
-## Workflow
+## 工作流
 
-1. Confirm chapter goal, scope boundary, and test-level selection strategy.
-2. Split testing content into development-process testing and product testing.
-3. Draft sections 6.1-6.4 with `references/system-testing-sop-outline.md`.
-4. Apply test-demand mining and case-design guidance from `references/test-analysis-and-case-design-guide.md`.
-5. Run quality checks with `references/system-testing-quality-checklist.md` and revise weak parts.
+1. 明确章节目标、测试范围与测试层级选择策略。
+2. 将内容划分为开发过程测试与产品测试两部分。
+3. 按 `references/system-testing-sop-outline.md` 完成 6.1-6.4。
+4. 依据 `references/test-analysis-and-case-design-guide.md` 开展需求挖掘与用例设计。
+5. 用 `references/system-testing-quality-checklist.md` 质检并修订。
 
-## Input Collection
+## 输入收集
 
-Collect at least:
-- system/project name, chapter target, and thesis length constraints
-- process-testing artifacts to sample (documents/modules/components and why selected)
-- product-testing objects (product description, user documents, software media/package)
-- available requirement sources and known constraints
-- selected test levels and rationale (unit/integration/configuration item/system/acceptance/regression)
-- planned metrics and evidence (coverage, defect statistics, unresolved issues, resource consumption)
+至少收集：
+- 系统/项目名称、章节目标、篇幅约束
+- 开发过程测试抽样对象（文档/模块/组件及抽样依据）
+- 产品测试对象（产品说明、用户文档、软件介质/安装包）
+- 可用需求来源与已知约束
+- 选择的测试层级及理由（单元/集成/配置项/系统/验收/回归）
+- 计划指标与证据（覆盖率、缺陷统计、未解决问题、资源消耗）
 
-If input is incomplete, state assumptions explicitly before drafting.
+若输入不完整，先声明假设再写作。
 
-## Writing Rules
+## 写作规则
 
-- Prioritize test analysis and test case design depth over exhaustive test listing.
-- Explain both explicit test requirements (from visible documents) and implicit test requirements (from experience, inquiry, and system probing).
-- Keep chapter content tailorable: detail key tests and summarize similar tests due to length constraints.
-- For key test parts, describe at least two different test case design methods.
-- In execution and conclusion, report measurable data, process metrics, product quality metrics, residual defects, and pass/fail judgment.
-- Keep narrative evidence-based and avoid unsupported "all passed" style claims.
+- 优先保证测试分析与用例设计深度，而非罗列全部测试项。
+- 同时说明显式测试需求（来自可见文档）与隐式测试需求（来自经验、访谈、探查）。
+- 在篇幅受限时详写关键测试、归纳同类测试。
+- 对关键部分至少体现两种测试用例设计方法。
+- 在执行与结论中给出可量化数据、过程指标、产品质量指标、残留缺陷与通过判定。
+- 结论必须有证据支撑，避免“全部通过”等无依据表述。
 
-## Optimization Mode
+## 重写模式
 
-When revising existing testing text:
+当重写已有测试文本时：
 
-1. Diagnose by subsection: weak test scope declaration, shallow demand analysis, single-method case design, missing metrics, or weak conclusion traceability.
-2. Preserve valid facts and measured data; rewrite only weak or generic sections.
-3. Return revised text plus a short gap list of missing evidence/tables/records.
+1. 分节诊断：范围声明不清、需求分析浅、用例设计单一、缺少指标、结论不可追溯。
+2. 保留有效事实与测量数据，仅重写薄弱或空泛部分。
+3. 输出重写正文，并附缺失证据/表格/记录清单。

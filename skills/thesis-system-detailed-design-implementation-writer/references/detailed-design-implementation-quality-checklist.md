@@ -1,36 +1,36 @@
-# Detailed Design and Implementation Quality Checklist
+# 详细设计与实现质量检查清单
 
-Mark each item pass/fail before final output.
+在输出终稿前逐项判定是否通过。
 
-## Design Rationale
+## 设计论证
 
-- [ ] Each key section shows problem -> method/pattern -> result -> benefit.
-- [ ] Distinctive/complex modules are prioritized; routine modules are compressed or moved to appendix.
-- [ ] Diagram choice matches purpose (static vs interaction vs behavior).
+- [ ] 关键小节具备“问题 -> 方法/模式 -> 结果 -> 收益”链路。
+- [ ] 优先展开有复杂度和辨识度的模块，常规模块已压缩或移入附录。
+- [ ] 图示类型与目标匹配（静态结构 / 交互行为 / 状态演化）。
 
-## UML and Narrative Consistency
+## UML 与文字一致性
 
-- [ ] Class/object relationships are reflected in text logic.
-- [ ] Sequence/collaboration/activity/state descriptions are scenario-bound and not generic.
-- [ ] No contradiction between diagram semantics and written explanation.
+- [ ] 类/对象关系在文字逻辑中得到对应说明。
+- [ ] 时序/协作/活动/状态描述绑定具体场景而非泛化叙述。
+- [ ] 图示语义与文字解释无冲突。
 
-## Database Design Depth
+## 数据库设计深度
 
-- [ ] DB selection includes comparison and reason, not only a final statement.
-- [ ] Core table design includes keys/constraints/relationships.
-- [ ] ORM/persistence/storage strategy and trade-offs are explicitly discussed.
+- [ ] 数据库选型包含对比与理由，不只给结论。
+- [ ] 核心表设计包含主外键、约束与关系。
+- [ ] ORM/持久化/存储策略及其权衡有明确说明。
 
-## Implementation Writing Quality
+## 实现写作质量
 
-- [ ] Implementation emphasizes algorithm steps and control logic.
-- [ ] Large raw code/config dumps are removed frommain text.
-- [ ] If code-like content is necessary, it is expressed as concise pseudocode (Algorithm) or config figure.
+- [ ] 实现部分强调算法步骤与控制逻辑。
+- [ ] 正文无大段原始代码或配置堆砌。
+- [ ] 必要代码内容以简洁伪代码或配置图框表达。
 
-## Cross-Chapter Alignment
+## 跨章节一致性
 
-- [ ] Same business flow is not redundantly repeated across requirements/design/implementation sections.
-- [ ] Chapter transitions are clear and each chapter keeps its own abstraction level.
+- [ ] 同一业务流未在需求/设计/实现章节重复平铺复述。
+- [ ] 章节过渡清晰，各章保持各自抽象层级。
 
-## Output Rule
+## 输出规则
 
-If critical items fail, revise before final delivery and report what was fixed.
+若关键项未通过，先修订并说明修复点，再交付终稿。

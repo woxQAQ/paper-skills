@@ -1,86 +1,86 @@
-# System Overview Design SOP Outline
+# 系统总体设计 SOP 大纲
 
-Use this scaffold when drafting chapter 4 system overview design.
+第4章系统总体设计可按以下模板组织。
 
-## Core Principle
+## 核心原则
 
-- Describe architecture at macro level: component + connector + rationale.
-- Explain "Why this architecture" before "How to implement it".
-- Keep common/generic content concise; expand innovative and project-specific parts.
+- 从宏观架构描述：组件 + 连接关系 + 设计依据。
+- 先回答“为什么这样设计”，再回答“如何落地实现”。
+- 通用内容简写，创新点与项目特异性内容详写。
 
-## 4.1 System Static Structure (Required)
+## 4.1 系统静态结构（必写）
 
-Choose suitable views; do not mechanically include every UML diagram.
+按需选取视图，不机械堆叠全部 UML 图。
 
-### 4.1.1 Functional View (optional but common)
+### 4.1.1 功能视图（可选但常用）
 
-- Decompose the system into major functional modules.
-- Clarify module goals, boundaries, and external interfaces.
-- Suggested figure: functional module diagram.
+- 将系统拆分为主要功能模块。
+- 说明模块目标、边界与外部接口。
+- 建议图示：功能模块图。
 
-### 4.1.2 Logical View / Component View (recommended)
+### 4.1.2 逻辑视图 / 组件视图（推荐）
 
-- Describe user-facing and supporting modules.
-- Define component responsibilities, dependencies, and collaboration interfaces.
-- Suggested figure: UML component diagram.
+- 描述面向用户模块与支撑模块。
+- 说明组件职责、依赖关系、协作接口。
+- 建议图示：UML 组件图。
 
-### 4.1.3 Layered Logical Architecture (when layered system is obvious)
+### 4.1.3 分层逻辑架构（分层系统时）
 
-- Applicable to Java EE or similar layered systems.
-- Explain layers (presentation, business, data, infrastructure) and cross-layer constraints.
+- 适用于 Java EE 等典型分层系统。
+- 说明表现层、业务层、数据层、基础设施层及跨层约束。
 
-### 4.1.4 Deployment View / Physical View (as needed)
+### 4.1.4 部署视图 / 物理视图（按需）
 
-- Map executable programs, runtime libraries, middleware, and system software to physical nodes.
-- Explain deployment support for reliability, scalability, availability, and maintainability.
-- Suggested figure: UML deployment diagram.
+- 将可执行程序、运行库、中间件、系统软件映射到物理节点。
+- 说明部署如何支撑可靠性、可扩展性、可用性、可维护性。
+- 建议图示：UML 部署图。
 
-## 4.2 System Dynamic Structure (Optional)
+## 4.2 系统动态结构（选写）
 
-Select only flows that are architecturally critical.
+仅选择对架构有关键意义的流程展开。
 
-### 4.2.1 Process View
+### 4.2.1 流程视图
 
-- Focus on runtime process/thread/object collaboration and concurrency/synchronization/communication.
-- Suggested figures: sequence diagram, activity diagram.
-- Activity diagrams should reflect action flow and state/result change.
+- 聚焦运行期进程/线程/对象协作与并发、同步、通信机制。
+- 建议图示：时序图、活动图。
+- 活动图应体现动作流与状态/结果变化。
 
-### 4.2.2 Data Flow View
+### 4.2.2 数据流视图
 
-- Describe end-to-end information transformation from input to output.
-- Show key data carriers and transformations on each path.
-- Suggested figure: data-flow diagram (DFD), optionally annotate key data on arrows.
+- 描述信息从输入到输出的端到端转换。
+- 展示关键数据载体与路径上的转换关系。
+- 建议图示：数据流图（DFD），可在箭头上标关键数据。
 
-## 4.3 System Data Management (Generally Required)
+## 4.3 系统数据管理（通常必写）
 
-### 4.3.1 Data View and Persistence Strategy
+### 4.3.1 数据视图与持久化策略
 
-- Describe data flow, persistence model, object-relational mapping, and storage strategy.
-- Explain mapping among object model, tables, procedures/triggers (if used).
+- 描述数据流、持久化模型、对象关系映射与存储策略。
+- 说明对象模型、表结构、过程/触发器（若使用）间映射关系。
 
-### 4.3.2 ER Model
+### 4.3.2 ER 模型
 
-- Identify entities, relationships, and attributes.
-- Use ER diagram to support communication between business and technical perspectives.
+- 识别实体、关系、属性。
+- 用 ER 图支撑业务与技术视角沟通。
 
-### 4.3.3 Key Data Structures (as needed)
+### 4.3.3 关键数据结构（按需）
 
-- Present critical entities, relation model, and physical model.
-- Explain table design rationale, indexing/partitioning/archival (if relevant).
+- 展示关键实体、关系模型、物理模型。
+- 说明表设计依据、索引/分区/归档策略（若相关）。
 
-## 4.4 Other Views (Optional)
+## 4.4 其他视图（选写）
 
-### 4.4.1 Security View
+### 4.4.1 安全视图
 
-- Summarize security architecture and control points.
-- Highlight identity/authentication, authorization, auditing, transmission/storage protection, and key security files/configurations.
+- 概述安全架构与控制点。
+- 突出认证鉴权、审计、传输/存储保护与关键安全配置。
 
-### 4.4.2 Development/Implementation View
+### 4.4.2 开发/实现视图
 
-- Describe implementation model: source code organization, executables, web resources, framework layers.
-- Clarify framework usage boundaries and self-developed extensions.
+- 描述实现模型：源码组织、可执行单元、Web 资源、框架分层。
+- 说明框架使用边界与自研扩展点。
 
-## Closing Requirement
+## 收束要求
 
-When describing architecture ideas, explicitly reflect design patterns or architectural principles where meaningful.
-Always provide concrete project-specific structure diagrams instead of generic templates.
+在阐述架构思想时，按需体现设计模式或架构原则。
+始终提供与项目匹配的具体结构图，避免使用通用模板图。

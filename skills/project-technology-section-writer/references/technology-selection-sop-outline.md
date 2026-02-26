@@ -1,33 +1,33 @@
-# Technology Selection SOP Outline
+# 技术选型 SOP 大纲
 
-Use this structure for the project-related technology section.
+项目相关技术章节可按以下结构撰写。
 
-## X.X Platform Selection Background
+## X.X 平台选型背景
 
-- Project context and requirement pressure
-- Main technical bottlenecks or pain points
-- Selection goals (performance, scalability, maintenance, cost, delivery speed)
+- 项目场景与需求压力
+- 关键技术瓶颈或痛点
+- 选型目标（性能、扩展性、维护性、成本、交付速度）
 
-## X.X Selection Criteria
+## X.X 选型准则
 
-- Evaluation dimensions: fit, complexity, ecosystem, deployment, team familiarity
-- Mandatory constraints and trade-offs
-- How criteria map to project priorities
+- 评估维度：适配性、复杂度、生态、部署、团队熟悉度
+- 必要约束与权衡关系
+- 准则与项目优先级的对应关系
 
-## X.X Alternative Comparison
+## X.X 备选方案对比
 
-- Candidate A/B/C brief technical profile
-- Strengths and limitations under this project context
-- Why non-selected options are less suitable
+- 候选 A/B/C 的简要技术画像
+- 在本项目语境下的优势与局限
+- 未入选方案不适配的核心原因
 
-## X.X Final Selection and Rationale
+## X.X 最终选择与理由
 
-- Selected platform/framework and key reasons
-- Problem-to-solution mapping (pain point P -> capability C)
-- Expected engineering effect (development efficiency, reliability, maintainability)
+- 最终平台/框架及关键理由
+- 问题到能力映射（痛点 P -> 能力 C）
+- 预期工程收益（开发效率、可靠性、可维护性）
 
-## X.X Project-Level Application Plan
+## X.X 项目级应用方案
 
-- How the selected technology is used in this project architecture
-- Module responsibilities and integration points
-- Risk controls and fallback strategy (if needed)
+- 所选技术在本项目架构中的落位方式
+- 模块职责与集成接口
+- 风险控制与回退策略（按需）

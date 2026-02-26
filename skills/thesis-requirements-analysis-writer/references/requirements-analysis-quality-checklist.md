@@ -1,36 +1,36 @@
-# Requirements Analysis Quality Checklist
+# 需求分析质量检查清单
 
-Use this checklist before returning draft or revised text.
+在返回草稿或重写稿前逐项检查。
 
-## Structure Integrity
+## 结构完整性
 
-- [ ] Section 3.1 explains user needs, requirement drivers, and user value.
-- [ ] Section 3.2 explains elicitation process, stakeholder mapping, and initial requirements.
-- [ ] Section 3.3 contains use-case-oriented functional modeling and dynamic behavior modeling.
-- [ ] Section 3.4 contains measurable non-functional requirements.
+- [ ] 3.1 明确回答“用户需要什么、为何开发、用户获得什么”。
+- [ ] 3.2 体现需求导出过程，包含利益相关者与访谈/调研说明。
+- [ ] 3.3 覆盖功能性需求建模（需求条目 -> 用例图 -> 关键用例描述）。
+- [ ] 3.4 覆盖非功能性需求并按规范分类。
 
-## Artifact Completeness
+## 制品完整性
 
-- [ ] Use-case diagram is mentioned and aligned with described actors/use cases.
-- [ ] Use-case description tables are provided for key use cases.
-- [ ] At least one dynamic artifact (activity/sequence/state) is referenced with clear scenario linkage.
-- [ ] Business process context is present and consistent across 3.1-3.3.
+- [ ] 出现需求条目表，字段为 `需求编号/名称/参与者/说明`。
+- [ ] 出现关键用例描述表，字段完整（用例名称、触发条件、基本/异常事件流等）。
+- [ ] 至少引用一类动态模型（活动图/时序图/状态图）且与场景对应。
+- [ ] 出现业务流程现状或业务模型描述（文字或流程图）。
 
-## Logic and Traceability
+## 逻辑与可追踪性
 
-- [ ] Requirement statements can be traced to stakeholder concerns or elicitation evidence.
-- [ ] There is no jump from conclusion to model without intermediate rationale.
-- [ ] Functional requirements and non-functional constraints do not conflict.
-- [ ] Priority and implementation focus are explicit for key use cases.
+- [ ] 每类需求可追溯到用户问题、利益相关者关注点或访谈证据。
+- [ ] 从“需求导出”到“模型表达”之间没有逻辑跳步。
+- [ ] 正文聚焦核心/突破性用例，未将全部项目清单堆砌进正文。
+- [ ] 功能需求与非功能约束无明显冲突。
 
-## Quantification and Verifiability
+## 量化与可验证性
 
-- [ ] Non-functional requirements use measurable indicators and target values.
-- [ ] Verification method is stated for major quality indicators.
-- [ ] Ambiguous claims are rewritten into testable statements.
+- [ ] 非功能性需求含量化目标值（能定量尽量定量）。
+- [ ] 每项关键指标有验证方式（测试、监控、验收口径等）。
+- [ ] 删除“高性能/高稳定”等不可验证描述。
 
-## Language and Style
+## 语言与规范
 
-- [ ] Academic tone is concise and avoids slogans.
-- [ ] Terms are consistent (actor/use case/process names).
-- [ ] Diagram/table references match the text.
+- [ ] 避免“如下表/如下图”，改为“见表3-x/见图3-x”。
+- [ ] 术语前后一致（参与者、用例、流程、指标名）。
+- [ ] 图表编号与正文引用一致。

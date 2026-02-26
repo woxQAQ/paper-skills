@@ -1,40 +1,40 @@
-# Introduction SOP Outline
+# 绪论 SOP 大纲
 
-Use this scaffold when drafting section 1.1-1.5.
+撰写 1.1-1.5 可按以下模板组织。
 
-## 1.1 System Development Background and Significance
+## 1.1 系统开发背景与意义
 
-- Context: industry/application background and current pain point
-- Why now: urgency, constraints, or new demand
-- Significance: practical value + technical value
-- Evidence placeholder: cite policy/report/paper/product data when possible
+- 背景：行业/应用场景与当前痛点
+- 时机：紧迫性、约束变化或新需求出现
+- 意义：实践价值 + 技术价值
+- 证据：可补政策/报告/论文/产品数据引用占位
 
-## 1.2 Domestic and International Status
+## 1.2 国内外现状
 
-- Comparison dimension: method/architecture/data/source/metrics/deployment cost
-- Domestic line: representative solutions and technical route summary
-- International line: representative solutions and technical route summary
-- Synthesis: what is mature, what is weak, and what is not yet solved
-- End this section with explicit gaps that motivate section 1.3
+- 对比维度：方法、架构、数据来源、指标、部署成本等
+- 国内：代表性方案与技术路线归纳
+- 国外：代表性方案与技术路线归纳
+- 综合：哪些已成熟、哪些薄弱、哪些尚未解决
+- 以明确“研究/工程缺口”结束本节，并引出 1.3
 
-## 1.3 Main Problems Solved
+## 1.3 拟解决的主要问题
 
-- Problem P1/P2/P3: specific, bounded, testable
-- Why hard: constraints, trade-offs, engineering or algorithm challenges
-- Expected target: what improvement each problem should deliver
+- 问题 P1/P2/P3：具体、可界定、可验证
+- 难点来源：约束、权衡、工程实现或算法挑战
+- 目标结果：每个问题预期带来的改进
 
-## 1.4 Main Work of This Paper
+## 1.4 本文主要工作
 
-- Work W1/W2/W3 mapped to P1/P2/P3
-- Include implementation-level actions (design, module, experiment, optimization)
-- For non-research papers, use "main work" wording, avoid "main contribution"
+- 工作 W1/W2/W3 与 P1/P2/P3 一一映射
+- 包含落地动作：设计、模块实现、实验验证、优化等
+- 非研究型文本用“主要工作”，避免“主要贡献”
 
-## 1.5 Organization of the Thesis
+## 1.5 论文组织结构
 
-Use one sentence per chapter:
-- Chapter 1: introduction
-- Chapter 2: related technologies/theoretical basis
-- Chapter 3: requirement analysis or system design
-- Chapter 4: implementation
-- Chapter 5: testing/evaluation
-- Chapter 6: conclusion and future work
+每章一句概括，可参考：
+- 第1章：绪论
+- 第2章：相关技术或理论基础
+- 第3章：需求分析或系统设计
+- 第4章：系统实现
+- 第5章：测试与评估
+- 第6章：总结与展望

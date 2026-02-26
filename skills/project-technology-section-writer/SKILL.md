@@ -1,44 +1,44 @@
 ---
 name: project-technology-section-writer
-description: Write and optimize the project-related technology section in Chinese technical papers. Use when the user needs to draft or revise technology/platform sections that must focus on technology selection rationale (why this platform/framework, what alternatives were considered, what problems are solved), instead of copying generic framework introductions.
+description: 撰写与优化中文技术论文中的“项目相关技术”章节。用于用户需要起草或重写技术/平台部分，重点阐明技术选型依据（为何选该平台或框架、对比了哪些备选、解决了什么问题），避免堆砌通用框架介绍。
 ---
 
-# Project Technology Section Writer
+# 项目相关技术章节写作器
 
-Follow this workflow to draft or polish the project technology section.
+按以下流程起草或润色项目相关技术章节。
 
-## Workflow
+## 工作流
 
-1. Confirm project scenario, constraints, and target capabilities.
-2. Identify candidate technologies and selected stack.
-3. Explain selection rationale with explicit problem-solution mapping.
-4. Draft by the structure in `references/technology-selection-sop-outline.md`.
-5. Verify with `references/technology-selection-quality-checklist.md` and revise.
+1. 明确项目场景、约束条件与目标能力。
+2. 识别候选技术并确认最终技术栈。
+3. 以“问题-方案”映射解释选型理由。
+4. 按 `references/technology-selection-sop-outline.md` 组织正文。
+5. 用 `references/technology-selection-quality-checklist.md` 进行质检并修订。
 
-## Input Collection
+## 输入收集
 
-Collect at least:
-- project type, business scenario, and core requirements
-- non-functional constraints (performance, maintainability, cost, deployment)
-- candidate technologies/platforms and the final choice
-- known pain points that the selected technology should solve
-- implementation boundaries (team skill, timeline, existing system compatibility)
+至少收集：
+- 项目类型、业务场景、核心需求
+- 非功能约束（性能、可维护性、成本、部署）
+- 候选技术/平台与最终选择
+- 已知痛点与目标技术对应解决点
+- 实施边界（团队能力、周期、既有系统兼容性）
 
-If user input is incomplete, state assumptions before writing.
+若输入不完整，先声明假设再写作。
 
-## Writing Rules
+## 写作规则
 
-- Do not paste generic framework history or official feature lists.
-- Explain "why choose" before "what it is".
-- Tie each selected technology to concrete project problems.
-- Compare with at least one feasible alternative when possible.
-- Keep arguments verifiable: requirement -> criterion -> selection -> expected benefit.
+- 不粘贴通用框架历史或官网特性清单。
+- 先讲“为什么选”，再讲“是什么”。
+- 每项技术都要对应具体项目问题。
+- 条件允许时至少对比一个可行备选方案。
+- 保持可验证链路：需求 -> 准则 -> 选择 -> 预期收益。
 
-## Optimization Mode
+## 重写模式
 
-When revising existing text:
+当重写已有文本时：
 
-1. Remove template-like introductions and empty slogans.
-2. Strengthen the chain: requirement/constraint -> selection criterion -> platform choice.
-3. Add concise comparative reasoning if alternatives are missing.
-4. Keep only project-relevant technical details.
+1. 删除模板化引言和空泛口号。
+2. 强化链路：需求/约束 -> 选型准则 -> 平台选择。
+3. 若缺少备选分析，补充简洁对比论证。
+4. 仅保留与项目直接相关的技术细节。

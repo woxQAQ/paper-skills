@@ -1,4 +1,4 @@
 interface:
-  display_name: "Thesis System Testing Writer"
-  short_description: "Draft and optimize thesis testing chapters"
-  default_prompt: "Draft or improve thesis system testing sections, including test overview, requirement analysis, test case design, execution records, metrics, and conclusions."
+  display_name: "论文系统测试写作器"
+  short_description: "撰写和优化系统测试章节"
+  default_prompt: "请撰写或优化论文系统测试章节，覆盖测试概述、测试需求分析、测试用例设计、执行记录、度量指标与测试结论。"

@@ -1,38 +1,38 @@
-# System Overview Design Quality Checklist
+# 系统总体设计质量检查清单
 
-Mark each item as pass/fail before final output.
+在输出终稿前逐项判定是否通过。
 
-## Positioning and Rationale
+## 定位与论证
 
-- [ ] Architecture rationale is explicit: design basis and constraints are stated before solution details.
-- [ ] The chapter focuses on overview design (macro architecture), not detailed coding/design minutiae.
-- [ ] Distinctive/innovative design points are highlighted and justified.
-- [ ] Open-source/framework capabilities and self-developed work are clearly separated.
+- [ ] 架构论证明确：先写设计依据与约束，再写方案细节。
+- [ ] 章节聚焦总体设计（宏观架构），不下沉到编码级细节。
+- [ ] 项目特色/创新设计点有突出且有理由支撑。
+- [ ] 开源/框架能力与自研内容边界清晰。
 
-## 4.1 Static Structure (Required)
+## 4.1 静态结构（必写）
 
-- [ ] At least one suitable static view is provided (functional, logical/component, layered, or deployment).
-- [ ] Component responsibilities and connectors are clear and consistent with text.
-- [ ] Chosen diagrams match project characteristics instead of template-driven "all-in" diagrams.
+- [ ] 至少给出一种合适静态视图（功能、逻辑/组件、分层、部署）。
+- [ ] 组件职责与连接关系清晰，且与正文一致。
+- [ ] 图示选择贴合项目特征，非模板化“全图堆叠”。
 
-## 4.2 Dynamic Structure (Optional)
+## 4.2 动态结构（选写）
 
-- [ ] If included, dynamic views are bound to critical runtime scenarios.
-- [ ] Process view explains concurrency/synchronization/communication where relevant.
-- [ ] Data-flow view clearly describes major data transformation paths.
+- [ ] 若编写动态视图，需绑定关键运行场景。
+- [ ] 流程视图在需要时解释并发/同步/通信机制。
+- [ ] 数据流视图清晰描述主要数据转换路径。
 
-## 4.3 Data Management (Generally Required)
+## 4.3 数据管理（通常必写）
 
-- [ ] Data model includes entities, relations, and key attributes (ER-level clarity).
-- [ ] Persistence strategy is explained (ORM/mapping/storage decisions).
-- [ ] Key table/relationship design reflects business semantics and system constraints.
+- [ ] 数据模型具备实体、关系、关键属性（ER 层面清晰）。
+- [ ] 持久化策略有说明（ORM/映射/存储决策）。
+- [ ] 关键表与关系设计体现业务语义与系统约束。
 
-## 4.4 Optional Views and Consistency
+## 4.4 其他视图与一致性
 
-- [ ] Security/development views are included only when meaningful, and provide concrete control points or implementation structure.
-- [ ] Cross-section consistency holds: architecture, dynamic flow, and data model do not conflict.
-- [ ] Diagram names, terms, and module names are consistent throughout chapter 4.
+- [ ] 安全/开发视图仅在有意义时加入，且给出具体控制点或结构说明。
+- [ ] 各节保持一致：架构、动态流程、数据模型不冲突。
+- [ ] 第4章内图名、术语、模块名一致。
 
-## Output Rule
+## 输出规则
 
-If any critical item fails (rationale missing, static view missing, or data management missing), revise before final delivery and report what was fixed.
+若关键项未通过（如缺少架构依据、静态视图、数据管理），先修订并说明修复点，再交付终稿。

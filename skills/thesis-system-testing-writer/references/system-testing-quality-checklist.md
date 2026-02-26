@@ -1,38 +1,38 @@
-# System Testing Quality Checklist
+# 系统测试质量检查清单
 
-Mark each item pass/fail before final output.
+在输出终稿前逐项判定是否通过。
 
-## Chapter Scope and Positioning
+## 章节范围与定位
 
-- [ ] Development process testing and product testing are both covered.
-- [ ] Test scope, objects, environment, methods/tools, goals, and baseline are clearly declared.
-- [ ] Tailoring (what is detailed vs summarized) is explicitly justified.
+- [ ] 同时覆盖开发过程测试与产品测试。
+- [ ] 测试范围、对象、环境、方法/工具、目标与验收基线声明清晰。
+- [ ] 明确说明“详写什么、简写什么”的裁剪依据。
 
-## Test Analysis Depth
+## 测试分析深度
 
-- [ ] Explicit and implicit test requirement acquisition are both explained.
-- [ ] Requirement sources are traceable to test points.
-- [ ] Selected test levels are justified by risk/stage and not random.
+- [ ] 同时说明显式与隐式测试需求获取过程。
+- [ ] 需求来源可追溯到测试点。
+- [ ] 测试层级选择基于风险与阶段，不是随意挑选。
 
-## Test Case Design Quality
+## 用例设计质量
 
-- [ ] Case design aligns with each selected test requirement.
-- [ ] Key test content uses at least two different case design methods.
-- [ ] Pass/fail criteria are specific and testable.
+- [ ] 用例设计与所选测试需求一一对应。
+- [ ] 关键测试至少使用两种不同用例设计方法。
+- [ ] 通过/失败判据具体且可验证。
 
-## Execution Records and Metrics
+## 执行记录与度量
 
-- [ ] Resource consumption is recorded with actual numbers.
-- [ ] Coverage analysis indicates whether execution is sufficient.
-- [ ] Defect statistics, trend interpretation, residual defects, and unresolved issues are reported.
-- [ ] Final conclusion states whether testing goals and pass criteria are met.
+- [ ] 资源消耗有实际数据记录。
+- [ ] 覆盖率分析能说明执行充分性。
+- [ ] 报告缺陷统计、趋势解读、残留缺陷与未解决问题。
+- [ ] 最终结论明确测试目标与通过准则是否达成。
 
-## Writing Integrity
+## 写作完整性
 
-- [ ] No unsupported blanket claims such as "all tests passed without issues".
-- [ ] Data and conclusions are consistent and traceable.
-- [ ] Repetitive low-value case listing is compressed.
+- [ ] 不出现“全部通过且无问题”等无证据笼统结论。
+- [ ] 数据与结论一致且可追溯。
+- [ ] 压缩低价值、重复性测试项罗列。
 
-## Output Rule
+## 输出规则
 
-If critical items fail, revise before final delivery and report what was fixed.
+若关键项未通过，先修订并说明修复点，再交付终稿。

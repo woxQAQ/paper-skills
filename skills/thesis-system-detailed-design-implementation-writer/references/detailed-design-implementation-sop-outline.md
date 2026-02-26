@@ -1,46 +1,46 @@
-# Detailed Design and Implementation SOP Outline
+# 详细设计与实现 SOP 大纲
 
-Use this scaffold for the chapter on system detailed design and implementation.
+系统详细设计与实现章节可按以下模板组织。
 
-## 5.1 Design Targets and Key Difficulties
+## 5.1 设计目标与关键难点
 
-- State the main technical problem and constraints.
-- Explain why detailed design is required beyond overview design.
-- List modules that deserve priority expansion (complex/high-risk/distinctive).
+- 说明主要技术问题与约束条件。
+- 解释为何在总体设计之后仍需展开详细设计。
+- 列出应重点展开的模块（高复杂、高风险、有特色）。
 
-## 5.2 Module Detailed Design (UML-Oriented)
+## 5.2 模块详细设计（UML 导向）
 
-For each key module:
-- **Responsibility and boundary**: input/output, collaboration objects.
-- **Static structure**: class/object structure and critical relationships.
-- **Interaction flow**: sequence or collaboration view for one core scenario.
-- **Behavior evolution**: state or activity view when lifecycle/concurrency matters.
-- **Design decision**: method/pattern/theory used and why chosen.
-- **Benefit**: maintainability, extensibility, performance, robustness, etc.
+针对每个关键模块：
+- **职责与边界**：输入/输出、协作对象。
+- **静态结构**：类/对象结构与关键关系。
+- **交互流程**：选一个核心场景用时序图或协作图说明。
+- **行为演化**：生命周期或并发敏感时补充状态图/活动图。
+- **设计决策**：采用了什么方法/模式/理论，为什么选它。
+- **设计收益**：对可维护性、扩展性、性能、鲁棒性的提升。
 
-Do not enumerate every low-value module in main text; move routine parts to appendix.
+正文不枚举低价值模块，常规内容可放附录。
 
-## 5.3 Database Detailed Design
+## 5.3 数据库详细设计
 
-- **DB selection**: compare options and justify final choice.
-- **Schema design**: core tables, key fields, data types, constraints.
-- **Table relationships**: one-to-one/one-to-many/many-to-many and consistency rules.
-- **ORM mapping**: object-table mapping strategy and pitfalls handling.
-- **Persistence and storage**: transactions, indexes, partition/archival policy, hot/cold data strategy.
-- **Design gain**: integrity, query efficiency, scalability, cost control.
+- **数据库选型**：对比备选并说明最终理由。
+- **模式设计**：核心表、关键字段、数据类型、约束。
+- **表间关系**：一对一/一对多/多对多与一致性规则。
+- **ORM 映射**：对象-表映射策略及常见问题处理。
+- **持久化与存储**：事务、索引、分区/归档、冷热数据策略。
+- **设计收益**：完整性、查询效率、扩展能力、成本控制。
 
-## 5.4 Key Algorithm Implementation
+## 5.4 关键算法实现
 
-For each key algorithm:
-- Problem definition and trigger condition.
-- Inputs/outputs and preprocessing assumptions.
-- Core steps and control logic (pseudocode or flow description).
-- Complexity/performance and stability safeguards.
-- Validation evidence (test scenario, observed effect).
+针对每个关键算法：
+- 问题定义与触发条件。
+- 输入/输出与预处理假设。
+- 核心步骤与控制逻辑（伪代码或流程说明）。
+- 复杂度/性能分析与稳定性保护策略。
+- 验证证据（测试场景、观测结果）。
 
-Avoid large source-code and full config pasting in main text.
+正文避免大段源码和完整配置粘贴。
 
-## 5.5 Chapter Conclusion
+## 5.5 本章小结
 
-- Summarize the final design result and implementation feasibility.
-- Connect to next chapter (testing/evaluation/deployment).
+- 总结设计结果与实现可行性。
+- 引出下一章（测试/评估/部署）。
