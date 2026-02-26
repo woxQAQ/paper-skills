@@ -1,7 +1,6 @@
 # paper-skills
 
-A Claude Code plugin with reusable writing skills for Chinese technical papers
-and graduation projects.
+A set of skills for USTC-SE graduation paper projects.
 
 ## Installation
 
@@ -69,24 +68,19 @@ paper-skills/
 
 ## Usage
 
-Once installed, the skills are automatically available in Claude Code. Simply
-describe what you need:
+Once installed, the skills are automatically available in Claude Code or Codex.
+Simply describe what you need:
 
 - "Help me write the introduction chapter for my graduation project about..."
 - "Write the requirements analysis for a student management system..."
 - "Review and improve my system testing section..."
 
-Claude will automatically load the appropriate skill based on your request.
+Your agent will automatically load the appropriate skill based on your request.
 
-## Quick Checks
-
-Run these before submitting changes:
-
-```bash
-rg --files skills
-find skills -maxdepth 3 -type f | sort
-python -c "import yaml, pathlib; [yaml.safe_load(p.read_text()) for p in pathlib.Path('skills').glob('*/agents/*.yaml')]"
-```
+> ![NOTE] regarding to the complexity of your progress，the prompt should be
+> different. For example, a start paper should give more context to the LLM,
+> while the wait-for-refine papers just need to call the skill directly and
+> Agent will find the target files to edit
 
 ## Contributing
 
